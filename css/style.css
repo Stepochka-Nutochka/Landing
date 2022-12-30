@@ -101,7 +101,7 @@ a {
 	color: #cdcdcd;
 }
 
-.about-block .title-text:nth-child(1) {
+.title-text {
 	font-family: Georgia;
 	font-size: 35px;
 	line-height: 45px;
@@ -160,8 +160,18 @@ a {
 	align-content: space-between;
 	justify-content: space-evenly;
 	margin-top: 20%;
-	padding: 25% 10%;
+	padding: 20% 10%;
 	flex: 1;
+}
+
+.gallery-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.gallery-block .title-text {
+	padding: 0 0 5% 40%;
+	font-size: 65px;
 }
 
 .our-gallery-block {
