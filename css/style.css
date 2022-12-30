@@ -6,7 +6,7 @@ body {
 	padding: 0;
 }
 
-img {
+.title-block img {
 	max-width: none;
 	min-width: auto;
 	min-height: auto;
@@ -25,7 +25,8 @@ header {
 	justify-content: space-evenly;
 }
 
-ul {
+ul,
+nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -36,6 +37,9 @@ ul {
 li {
 	list-style-type: none;
 	margin-right: 5%;
+}
+
+a {
 	font-family: Arial;
 	font-size: 15px;
 	line-height: 29px;
@@ -47,6 +51,7 @@ li {
 	width: 100%;
 	height: 100%;
 	display: flex;
+	flex-direction: column;
 }
 
 .title-block {
@@ -76,7 +81,7 @@ li {
 	margin: 1% 0 0 10%;
 }
 
-.title-text {
+.title-block .content-block .title-text {
 	display: block;
 	font-family: Georgia;
 	font-size: 44px;
@@ -87,7 +92,7 @@ li {
 	color: #ffffff;
 }
 
-.title-text:nth-child(2) {
+.title-block .content-block .title-text:nth-child(2) {
 	font-family: Arial;
 	font-size: 15px;
 	line-height: 24px;
@@ -96,12 +101,35 @@ li {
 	color: #cdcdcd;
 }
 
+.about-block .title-text:nth-child(1) {
+	font-family: Georgia;
+	font-size: 35px;
+	line-height: 45px;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	width: 60%;
+	color: #545454;
+}
+
+.about-block .title-text:nth-child(2) {
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #4c4c4c;
+}
+
 .content-block {
-	height: 50%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	margin: 10% 0 0 10%;
 	justify-content: space-between;
+}
+
+.about-block .content-block {
+	margin: 0;
+	width: 30%;
 }
 
 .make-friend-button {
@@ -117,4 +145,21 @@ li {
 	font-weight: 400;
 	letter-spacing: 0.06em;
 	color: #292929;
+}
+
+.about-block .content-block {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.about-block {
+	display: flex;
+	align-items: stretch;
+	align-content: space-between;
+	justify-content: space-evenly;
+	margin-top: 20%;
+	padding: 20% 10%;
+	flex: 1;
 }
